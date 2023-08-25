@@ -1,0 +1,4 @@
+.posts {
+    position: relative;
+    padding : var(--padding);
+}

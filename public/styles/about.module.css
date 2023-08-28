@@ -1,4 +1,52 @@
+
+
+.layout{
+  padding : var(--padding);
+  margin-bottom: var(--margin-bottom);
+  display: grid;
+  grid-template-columns: auto;
+  grid-template-rows: 50px auto;
+  grid-template-areas:
+  "title list"
+  "content content"
+;
+}
+.title{
+  grid-area: title;
+  text-transform: uppercase;
+  align-self: center;
+}
+.list{
+  grid-area: list;
+  align-self: center;
+  justify-self: end;
+}
+.content{
+  width : 100%;
+  grid-area: content;
+}
+
+
+
+
+
+
+
+
+
+
 .about {
   position: relative;
-  padding : var(--padding);
+}
+.text{
+  display: block;
+  color : var(--text-color);
+  margin-bottom: var(--margin-bottom);
+  text-indent: var(--text-indent);
+}
+.image{
+  width : 300px;
+  height: 300px;
+  object-fit: cover;
+  object-position: center;
 }

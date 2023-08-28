@@ -1,17 +1,21 @@
 :root {
   --max-width: 1600px;
   --padding : 20px;
+  --margin-bottom : 20px;
   --font-size : 20px;
   --bg-color : #eee;
   --page-color : #FFF;
   --text-color : rgb(0, 0, 2);
-  --link-color: #1d0101;
   --text-hover-color : rgb(255, 255, 255);
   --hover : rgba(157, 24, 24, 0.35);
   --centred : 0 auto;
   --header-footer-height : 100px;
   --header-color : rgba(184, 230, 255, 0.42);
   --footer-color : rgba(89, 255, 0, 0.51);
+  --link-color : rgb(182, 0, 255);
+  --text-indent : var(--margin-bottom);
+
+  --test-border : 1px solid red;
 }
 
 
@@ -33,7 +37,8 @@ body {
 }
 
 a {
-  color: inherit;
+  color: var(--link-color);
   text-decoration: none;
+  padding :5px;
 }
 

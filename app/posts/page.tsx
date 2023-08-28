@@ -1,5 +1,5 @@
 import React from 'react';
-import Posts from "@/viewer/Posts";
+import Posts from "@/components/viewer/Posts";
 import {Metadata} from "next";
 
 

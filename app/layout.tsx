@@ -2,9 +2,9 @@ import '../public/styles/globals.css';
 import type {Metadata} from 'next'
 import {Roboto} from 'next/font/google'
 import React from "react";
-import LayoutHeader from "@/components/LayautComponents/Header/LayoutHeader";
-import LayoutFooter from "@/components/LayautComponents/Footer/LayoutFooter";
-import LayoutMain from "@/components/LayautComponents/Main/LayoutMain";
+import LayoutHeader from "@/components/layout/RootLayout/Header/LayoutHeader";
+import LayoutFooter from "@/components/layout/RootLayout/Footer/LayoutFooter";
+import LayoutMain from "@/components/layout/RootLayout/Main/LayoutMain";
 
 
 const roboto = Roboto({weight: "400", subsets: ["cyrillic"]})

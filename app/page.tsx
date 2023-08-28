@@ -1,4 +1,4 @@
-import Home from "@/viewer/Home";
+import Home from "@/components/viewer/Home";
 import {Metadata} from "next";
 
 export const metadata: Metadata = {

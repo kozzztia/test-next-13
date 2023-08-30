@@ -4,8 +4,8 @@ import Link from "next/link";
 import style from "../../../public/styles/posts.module.css"
 import {dictionary} from "@/public/dictionary/dictionary";
 import HeaderTitle from "@/ui-kit/title/HeaderTitle";
-import axios from "axios";
-import {AxiosRequestConfig} from "axios/index";
+// import axios from "axios";
+// import {AxiosRequestConfig} from "axios/index";
 
 type nameParamType = {
     params : {
@@ -19,12 +19,12 @@ type dataType = {
     title : string;
     body : string;
 }
-const otherAxiosConfigObject : AxiosRequestConfig = {
-    params  :{revalidate: 3600, cache: 'force-cache'}
-}
+// const otherAxiosConfigObject : AxiosRequestConfig = {
+//     params  :{revalidate: 3600, cache: 'force-cache'}
+// }
 const getData = async (id: string) =>{
-    const data = await axios(`https://jsonplaceholder.typicode.com/posts/${id}`);
-    return data.data
+    const data = await fetch(`https://jsonplaceholder.typicode.com/posts/${id}`);
+    return data.json()
 }
 // export  const generateMetadata = async ({params: {name}} : nameParamType) : Promise<Metadata>  => {
 //     const {userId} :dataType  = await getData(name);

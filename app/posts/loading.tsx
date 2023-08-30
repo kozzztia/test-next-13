@@ -1,10 +1,9 @@
 import React from 'react';
-
+import Image from "next/image";
+import loading from "../../public/pictures/loading.gif"
 const Loading = () => {
     return (
-        <div>
-            loadein..............
-        </div>
+            <Image src={loading} alt={"loading"} className={"loading"}/>
     );
 };
 

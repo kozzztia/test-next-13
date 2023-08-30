@@ -19,7 +19,7 @@
     align-items: center;
 }
 .main{
-    height: var(--header-footer-height);
+    /*height: var(--header-footer-height);*/
     max-width: var(--max-width);
     margin: var(--centred);
     background: var(--page-color);
